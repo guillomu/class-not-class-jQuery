@@ -1,19 +1,24 @@
+var blop = new Audio('sound/Blop.wav');
+
 /* --------- INSTRUCTIONS NIVEAU 1 --------- */
 
 /*  CLICK SUR LE BOUTTON REMPLIR  */
 $("#remplir").click(function(){
+  blop.play();
   $(".shape").addClass("filled"); // On ajoute la classe .filled à tous les élément .shape
 });
 
 
 /*  CLICK SUR LE BOUTTON VIDER  */
 $("#vider").click(function(){
+  blop.play();
   $(".shape").removeClass("filled"); // On enlève la classe .filled à tous les élément .shape
 });
 
 
 /*  CLICK SUR UN ROND  */
 $(".rond").click(function(){
+  blop.play();
   $(this).toggleClass("filled"); // On change la classe .filled de l'élément courant
 });
 
@@ -21,6 +26,7 @@ $(".rond").click(function(){
 
 /*  CLICK SUR UN CARRE  */
 $(".carre").click(function(){
+  blop.play();
   // On récupère le parent line et on change la class de tous les élément .shape de cette ligne
   $(this).parents(".line").find(".shape").toggleClass("filled");
 
@@ -39,6 +45,7 @@ $(".carre").click(function(){
 
 /*  CLICK SUR UN LOSANGE  */
 $(".losange").click(function(){
+  blop.play();
   // On récupère le parent line et on change la class de tous les élément .shape de cette ligne
   $(this).parents(".line").find(".shape").toggleClass("filled");
 

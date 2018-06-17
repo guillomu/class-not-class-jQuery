@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'ChopinScript';
+  src: url('font/ChopinScript.otf'); /* IE9 Compat Modes */
+  src: url('font/ChopinScript.otf') format('otf'), /* Super Modern Browsers */
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,17 +13,41 @@
 html, body, .full-height {
   height: 100%;
   margin: auto;
+	font-family: 'ChopinScript', Verdana, Arial, sans-serif;
 	text-align: center;
 }
 
 input{
 	width: 200px;
-	margin: 0 auto;
-}
-h1{
+	height: 80px;
 	margin: auto;
+	font-family: 'ChopinScript', Verdana, Arial, sans-serif;
+	font-size: 50px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 25px;
 }
 
+input:hover{
+	color: white;
+	background-color: black;
+}
+
+h1{
+	font-size: 50px;
+	margin: auto;
+	margin-right: 0;
+}
+
+#sir{
+	width: 10%;
+	height: 100%;
+	background-image: url("img/sir.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-left: 0;
+}
 .row {
 	/*border: 5px solid red;*/
 	display: flex;
@@ -74,5 +104,6 @@ h1{
 }
 
 .filled{
-	background-color: blue;
+	background-image: url("img/mustache.png");
+	background-size: contain;
 }
