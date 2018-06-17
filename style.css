@@ -7,6 +7,15 @@
 html, body, .full-height {
   height: 100%;
   margin: auto;
+	text-align: center;
+}
+
+input{
+	width: 200px;
+	margin: 0 auto;
+}
+h1{
+	margin: auto;
 }
 
 .row {
@@ -36,39 +45,34 @@ html, body, .full-height {
 }
 
 .quinte {
-	flex: 4;
+	flex: 5;
 }
 
 .rond{
 	margin: auto;
-	width: 100px; 
-	height: 100px; 
-	border: 1px solid black; 
-	-moz-border-radius: 50px; 
-	-webkit-border-radius: 50px; 
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
 	border-radius: 50px;
 }
 
 .carre{
 	margin: auto;
-	width: 90px; 
-	height: 90px; 
+	width: 90px;
+	height: 90px;
 	border: 1px solid black;
 }
 
 .losange{
 	margin: auto;
-	width: 0; height: 0; border: 50px solid transparent; border-bottom-color: red; position: relative; top: -50px;
+	width: 90px;
+	height: 90px;
+	border: 1px solid black;
+	transform: rotate(45deg);
 }
 
-.losange:after{
-	content: ''; position: absolute; left: -50px; top: 50px; width: 0; height: 0; border: 50px solid transparent; border-top-color: red;
-}
-
-.empty{
-	background-color: white;
-}
-
-.full{
-	background-color: red;
+.filled{
+	background-color: blue;
 }

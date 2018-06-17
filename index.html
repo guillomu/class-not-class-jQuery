@@ -2,55 +2,64 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Class pas Class</title>
+	<title>Classe pas Classe</title>
 	<link href="style.css" rel="stylesheet">
 
 </head>
 <body>
 
 	<div class="row full-height">
-		<div class="col double"></div>
-		<div class="col quad">
-			<div class="row">
-				<div class="col"><div class="carre empty"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
+		<div class="col">
+			<div class="row"> <h1>Classe ou pas classe?</h1></div>
+			<div class="row quad">
+				<div class="col double">
+						<input id="remplir" type="button" name="full" value="Remplir">
+						<input id="vider" type="button" name="empty" value="Vider">
+				</div>
+				<div id="matrix" class="col triple">
+					<div class="row line">
+						<div class="col"><div class="shape carre"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+					</div>
+					<div class="row line">
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape carre"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+					</div>
+					<div class="row line">
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape losange"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+					</div>
+					<div class="row line">
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape carre"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+					</div>
+					<div class="row line">
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape rond"></div></div>
+						<div class="col"><div class="shape carre"></div></div>
+					</div>
+				</div>
+				<div class="col double"></div>
 			</div>
-			<div class="row">
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="carre"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-			</div>
-			<div class="row">
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="losange"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-			</div>
-			<div class="row">
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="carre"></div></div>
-				<div class="col"><div class="rond"></div></div>
-			</div>
-			<div class="row">
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="rond"></div></div>
-				<div class="col"><div class="carre"></div></div>
-			</div>
-		</div>
-		<div class="col double"></div>
+			<div class="row"></div>
 	</div>
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.js%22%3E"></script>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>
